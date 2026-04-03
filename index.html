@@ -1,0 +1,1386 @@
+<!doctype html>
+<html lang="vi">
+  <!-- Mirrored from uiparadox.co.uk/templates/blessed/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 15:33:12 GMT -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Đám cưới Thiên Ân & Thảo Vy" />
+
+    <title>Thiên Ân & Thảo Vy — Đám Cưới 2026</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/media/favicon-light.png"
+    />
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/slick.css" />
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;1,300&display=swap&subset=latin,vietnamese"
+      rel="stylesheet"
+    />
+    <style>
+      /* ══════════════════════════════════════════
+         GLOBAL FONT OVERRIDE — softer, more elegant
+         ══════════════════════════════════════════ */
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .heading-block .content-block h3,
+      .heading-block .content-block h4 {
+        font-family: "Cormorant Garamond", "Old Standard TT", serif !important;
+        font-weight: 400 !important;
+        letter-spacing: 0.5px;
+      }
+      body,
+      p,
+      input,
+      select,
+      button,
+      label,
+      span,
+      li,
+      td {
+        font-family: "Be Vietnam Pro", sans-serif !important;
+        font-weight: 300 !important;
+        letter-spacing: 0.3px;
+      }
+
+      /* ── Section heading labels (small caps like "SỰ KIỆN") ── */
+      .heading-block .content-block h4,
+      section .heading-block .content-block h4 {
+        font-size: 13px !important;
+        letter-spacing: 5px !important;
+        text-transform: uppercase;
+        color: #b07d5a !important;
+        font-weight: 400 !important;
+        font-style: normal !important;
+        margin-bottom: 12px !important;
+      }
+      /* ── Section heading large titles (like "ĐÍNH HÔN & ĐÁM CƯỚI") ── */
+      .heading-block .content-block h3 {
+        font-size: 52px !important;
+        color: #3a2820 !important;
+        font-style: italic !important;
+        font-weight: 300 !important;
+        letter-spacing: 1px !important;
+        line-height: 1.2 !important;
+      }
+      @media (max-width: 767px) {
+        .heading-block .content-block h3 {
+          font-size: 36px !important;
+        }
+      }
+
+      /* ── Fix: text dính vào vòng tròn — push content up ── */
+      .heading-block .content-block {
+        padding: 160px 40px 120px !important;
+      }
+
+      /* ── About section headings ── */
+      .groom-text h3,
+      .bride-text h3 {
+        font-family: "Cormorant Garamond", serif !important;
+        font-size: 38px !important;
+        font-style: italic;
+        font-weight: 300 !important;
+        color: #3a2820;
+        letter-spacing: 1px;
+      }
+      .groom-text p,
+      .bride-text p {
+        font-size: 15px;
+        line-height: 1.8;
+        color: #7a6050;
+      }
+
+      /* ── Story section headings ── */
+      .story .text-block h4 {
+        font-family: "Cormorant Garamond", serif !important;
+        font-size: 30px !important;
+        font-style: italic !important;
+        font-weight: 400 !important;
+        color: #3a2820 !important;
+        letter-spacing: 0.5px;
+      }
+      .story .text-block h6 {
+        font-family: "Be Vietnam Pro", sans-serif !important;
+        font-size: 11px !important;
+        letter-spacing: 4px !important;
+        text-transform: uppercase;
+        color: #b07d5a !important;
+        font-weight: 400 !important;
+        margin-bottom: 10px !important;
+      }
+      .story .text-block p {
+        font-size: 15px !important;
+        line-height: 1.9 !important;
+        color: #6a5040 !important;
+      }
+
+      /* ── Coming soon section ── */
+      .coming-soon .text h5 {
+        font-family: "Be Vietnam Pro", sans-serif !important;
+        font-size: 11px !important;
+        letter-spacing: 5px !important;
+        text-transform: uppercase;
+        color: #b07d5a !important;
+        font-weight: 400 !important;
+      }
+      .coming-soon .text h3 {
+        font-family: "Cormorant Garamond", serif !important;
+        font-size: 64px !important;
+        font-style: italic !important;
+        font-weight: 300 !important;
+        color: #3a2820 !important;
+      }
+      .coming-soon .text p {
+        font-size: 14px !important;
+        letter-spacing: 1px;
+        color: #7a6050 !important;
+      }
+
+      /* ── Wishes ornament ── */
+      .wishes-ornament {
+        font-size: 22px;
+        color: #c8a070;
+        letter-spacing: 6px;
+        margin-bottom: 16px;
+        display: block;
+        text-align: center;
+      }
+
+      /* ── Wishes textarea ── */
+      .wishes-textarea {
+        resize: vertical;
+        min-height: 130px;
+        font-family: "Be Vietnam Pro", sans-serif !important;
+        font-size: 15px !important;
+        font-weight: 300 !important;
+        line-height: 1.8 !important;
+        padding: 14px 16px !important;
+      }
+      .wishes-textarea::placeholder {
+        color: #bba898 !important;
+        font-style: italic;
+      }
+
+      /* ── RSVP section ── */
+      .reservation h3 {
+        font-family: "Cormorant Garamond", serif !important;
+        font-size: 42px !important;
+        font-style: italic !important;
+        font-weight: 300 !important;
+        color: #3a2820 !important;
+      }
+      .reservation p {
+        font-size: 14px !important;
+        letter-spacing: 1.5px !important;
+        color: #7a6050 !important;
+      }
+      .reservation .form-control {
+        font-family: "Be Vietnam Pro", sans-serif !important;
+        font-size: 14px !important;
+        border-color: rgba(176, 125, 90, 0.35) !important;
+        color: #3a2820 !important;
+      }
+      .reservation .form-control:focus {
+        border-color: #b07d5a !important;
+        box-shadow: 0 0 0 3px rgba(176, 125, 90, 0.12) !important;
+      }
+      .reservation select {
+        font-family: "Be Vietnam Pro", sans-serif !important;
+        font-size: 14px !important;
+      }
+
+      /* ── Hero: clear header + fit images into oval shape ── */
+      .hero-banner .main {
+        padding-top: 100px;
+        align-items: stretch !important;
+      }
+      .hero-banner .main .circle-img {
+        overflow: hidden;
+        padding: 0 !important;
+        background: transparent !important;
+      }
+      .hero-banner .main .circle-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+      }
+
+      /* ── Mobile: show both images, title below ── */
+      @media (max-width: 575px) {
+        .hero-banner .main {
+          flex-wrap: wrap !important;
+          align-items: flex-start !important;
+          height: auto !important;
+          padding-top: 60px !important;
+          gap: 0 !important;
+        }
+        .hero-banner .main .circle-img.left {
+          display: block !important;
+          order: 1;
+          width: 50% !important;
+          height: 280px !important;
+          margin-left: 0 !important;
+        }
+        .hero-banner .main .circle-img.right {
+          order: 2;
+          width: 50% !important;
+          height: 280px !important;
+          margin-left: 0 !important;
+        }
+        .hero-banner .main .title {
+          order: 3;
+          width: 100% !important;
+          position: static !important;
+          transform: none !important;
+          font-size: 42px !important;
+          text-align: center;
+          padding: 24px 20px 10px !important;
+        }
+        .hero-banner .main .vertical-lines {
+          display: none !important;
+        }
+      }
+
+      /* ── Hero title: bottom-center between the two images ── */
+      .hero-banner .main .title {
+        font-family: "Cormorant Garamond", serif !important;
+        font-weight: 300 !important;
+        font-style: italic !important;
+        letter-spacing: 2px !important;
+        align-self: center !important;
+      }
+
+      /* ── Hide duplicate detail-block ── */
+      .hero-banner .detail-block {
+        display: none !important;
+      }
+      .hero-banner .detail-block h3 {
+        font-family: "Cormorant Garamond", serif !important;
+        font-size: 52px !important;
+        font-style: italic !important;
+        font-weight: 400 !important;
+        color: #3a2820 !important;
+        letter-spacing: 2px !important;
+      }
+      .hero-banner .detail-block p {
+        font-family: "Be Vietnam Pro", sans-serif !important;
+        font-size: 15px !important;
+        font-weight: 300 !important;
+        line-height: 2 !important;
+        color: #6a5040 !important;
+        letter-spacing: 0.3px !important;
+      }
+
+      /* ── Navbar ── */
+      .navbar .mainmenu .menu-item a {
+        font-family: "Be Vietnam Pro", sans-serif !important;
+        font-size: 11px !important;
+        letter-spacing: 3px !important;
+        font-weight: 400 !important;
+        color: #3a2820 !important;
+      }
+
+      /* ── Footer ── */
+      .footer h2 {
+        font-family: "Cormorant Garamond", serif !important;
+        font-style: italic !important;
+        font-weight: 300 !important;
+      }
+
+      /* ── Event Slides: elegant solid backgrounds ── */
+      .events-slider .item.slide-1 {
+        background: linear-gradient(
+          160deg,
+          #fdf4ec 0%,
+          #f5dfd0 100%
+        ) !important;
+      }
+      .events-slider .item.slide-2 {
+        background: linear-gradient(
+          160deg,
+          #fef9f4 0%,
+          #f7e8dc 100%
+        ) !important;
+      }
+      .events-slider .item.slide-3 {
+        background: linear-gradient(
+          160deg,
+          #f2f6f2 0%,
+          #d8e8de 100%
+        ) !important;
+      }
+      .events-slider .item {
+        background-size: cover !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+      }
+      .events-slider .item .container-fluid {
+        width: 100%;
+      }
+
+      /* ── Gallery ── */
+      .gallery-grid {
+        padding: 60px 0;
+      }
+      .gallery-grid .g-item {
+        overflow: hidden;
+        position: relative;
+        background-color: #f0ebe3;
+      }
+      .gallery-grid .g-portrait {
+        aspect-ratio: 3/4;
+      }
+      .gallery-grid .g-landscape {
+        aspect-ratio: 3/2;
+      }
+      .gallery-grid .g-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        will-change: transform;
+        transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      .gallery-grid .g-item:hover img {
+        transform: scale(1.04);
+      }
+      .gallery-grid .col-item {
+        padding: 5px;
+      }
+      @media (max-width: 767px) {
+        .gallery-grid .g-portrait {
+          aspect-ratio: 2/3;
+        }
+      }
+
+      /* ── Event Card ── */
+      .event-card {
+        background: rgba(255, 255, 255, 0.72);
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(180, 140, 110, 0.35);
+        border-radius: 4px;
+        padding: 48px 52px 44px;
+        position: relative;
+        max-width: 520px;
+        margin: 0 auto;
+        box-shadow: 0 8px 40px rgba(100, 60, 30, 0.08);
+      }
+      /* Corner ornaments */
+      .event-card::before,
+      .event-card::after {
+        content: "";
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        border-color: #c8a070;
+        border-style: solid;
+      }
+      .event-card::before {
+        top: 10px;
+        left: 10px;
+        border-width: 1.5px 0 0 1.5px;
+      }
+      .event-card::after {
+        bottom: 10px;
+        right: 10px;
+        border-width: 0 1.5px 1.5px 0;
+      }
+      .event-card-inner::before,
+      .event-card-inner::after {
+        content: "";
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        border-color: #c8a070;
+        border-style: solid;
+      }
+      .event-card-inner {
+        position: relative;
+      }
+      .event-card-inner::before {
+        top: -38px;
+        right: -42px;
+        border-width: 1.5px 1.5px 0 0;
+      }
+      .event-card-inner::after {
+        bottom: -34px;
+        left: -42px;
+        border-width: 0 0 1.5px 1.5px;
+      }
+
+      /* ── Card header ── */
+      .event-card .ornament {
+        text-align: center;
+        font-size: 16px;
+        color: #c8a070;
+        letter-spacing: 10px;
+        margin-bottom: 12px;
+        display: block;
+      }
+      .event-card .event-title {
+        font-family: "Cormorant Garamond", "Old Standard TT", serif !important;
+        font-size: 38px !important;
+        font-weight: 300 !important;
+        font-style: italic !important;
+        color: #3a2010 !important;
+        text-align: center !important;
+        margin-bottom: 6px !important;
+        letter-spacing: 1px;
+      }
+      .event-card .event-subtitle {
+        text-align: center;
+        font-family: "Be Vietnam Pro", sans-serif !important;
+        font-size: 11px;
+        letter-spacing: 3.5px;
+        text-transform: uppercase;
+        color: #c8a070;
+        margin-bottom: 28px;
+        display: block;
+        font-weight: 400 !important;
+      }
+
+      /* ── Divider ── */
+      .event-divider {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 0 0 28px;
+      }
+      .event-divider span {
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(
+          to right,
+          transparent,
+          #c8a070,
+          transparent
+        );
+      }
+      .event-divider i {
+        color: #c8a070;
+        font-size: 12px;
+      }
+
+      /* ── Info rows ── */
+      .event-info-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        margin-bottom: 18px;
+      }
+      .event-info-row:last-child {
+        margin-bottom: 0;
+      }
+      .event-info-row .icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: rgba(200, 160, 112, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+      .event-info-row .icon i {
+        color: #a07040;
+        font-size: 13px;
+      }
+      .event-info-row .info-text {
+        flex: 1;
+      }
+      .event-info-row .info-label {
+        font-family: "Be Vietnam Pro", sans-serif !important;
+        font-size: 10px;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        color: #c8a070;
+        display: block;
+        margin-bottom: 4px;
+        font-weight: 400 !important;
+      }
+      .event-info-row .info-value {
+        font-family: "Be Vietnam Pro", sans-serif !important;
+        font-size: 16px;
+        color: #3a2010;
+        font-weight: 300 !important;
+        line-height: 1.55;
+        display: block;
+      }
+
+      /* ── Footer couple name ── */
+      .event-card-footer {
+        text-align: center;
+        margin-top: 28px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(200, 160, 112, 0.3);
+        font-size: 14px;
+        color: #7a5030;
+        letter-spacing: 2px;
+      }
+      .event-card-footer strong {
+        font-family: "Cormorant Garamond", "Old Standard TT", serif;
+        font-size: 22px;
+        font-weight: 400;
+        font-style: italic;
+        color: #3a2010;
+        letter-spacing: 1px;
+      }
+
+      @media (max-width: 575px) {
+        .event-card {
+          padding: 36px 28px 32px;
+        }
+        .event-card .event-title {
+          font-size: 28px !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="contain">
+        <div class="loader">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="shadow"></div>
+      </div>
+    </div>
+
+    <!-- Back To Top Start -->
+    <a href="#main-wrapper" id="backto-top" class="back-to-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+    <!-- Main Wrapper Start -->
+    <div id="main-wrapper" class="main-wrapper overflow-hidden">
+      <!-- Header Area Start -->
+      <header class="large-screens">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg">
+            <div
+              class="collapse navbar-collapse justify-content-between"
+              id="mynavbar-3"
+            >
+              <div class="col-lg-5">
+                <ul class="navbar-nav mainmenu">
+                  <li class="menu-item"><a href="#about">GIỚI THIỆU</a></li>
+                  <li class="menu-item"><a href="#story">CÂU CHUYỆN</a></li>
+                  <li class="menu-item"><a href="#gallery">ẢNH CƯỚI</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2"></div>
+              <div class="col-lg-5">
+                <ul class="navbar-nav mainmenu justify-content-end">
+                  <li class="menu-item"><a href="#events">SỰ KIỆN</a></li>
+                  <li class="menu-item">
+                    <a href="#rspv">LỜI CHÚC</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <header class="small-screen">
+        <div class="container-fluid">
+          <div class="mobile-menu">
+            <div></div>
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+          <nav class="mobile-navar d-xl-none">
+            <ul>
+              <li class="menu-item"><a href="#about">GIỚI THIỆU</a></li>
+              <li class="menu-item"><a href="#story">CÂU CHUYỆN</a></li>
+              <li class="menu-item"><a href="#gallery">ẢNH CƯỚI</a></li>
+              <li class="menu-item"><a href="#events">SỰ KIỆN</a></li>
+              <li class="menu-item"><a href="#rspv">LỜI CHÚC</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- Header Area end -->
+
+      <!-- Hero Area start -->
+      <section class="hero-banner">
+        <div class="main">
+          <div class="vertical-lines"></div>
+          <div class="circle-img left">
+            <img src="assets/media/banner/DNG_4321.jpg" alt="" />
+          </div>
+          <h1 class="title">
+            Thiên Ân <br />
+            & <br />
+            Thảo Vy
+          </h1>
+          <div class="circle-img right">
+            <img src="assets/media/banner/CHD04645.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="detail-block">
+          <h3>Thiên Ân & Thảo Vy</h3>
+          <p>
+            Hai trái tim, một hành trình — cùng nhau viết nên câu chuyện tình
+            yêu đẹp nhất đời. Xin trân trọng kính mời bạn đến chung vui trong
+            ngày hạnh phúc của chúng mình.
+          </p>
+        </div>
+      </section>
+      <!-- Hero Area end -->
+
+      <!-- Main Content Start -->
+      <div class="page-content">
+        <!-- About Us Area Start  -->
+        <section id="about" class="pb-80">
+          <div class="container-fluid">
+            <div class="heading-block">
+              <div class="content-block">
+                <h4>Giới thiệu</h4>
+              </div>
+            </div>
+            <div class="content">
+              <img
+                src="assets/media/about/GD_01166.jpg"
+                alt=""
+                class="groom-img"
+              />
+              <div class="text">
+                <div class="groom-text">
+                  <h3>Thiên Ân</h3>
+                  <p>
+                    Chàng trai với trái tim chân thành, luôn yêu thương và che
+                    chở cho người con gái của đời mình.
+                  </p>
+                </div>
+                <div class="bride-text">
+                  <h3>Thảo Vy</h3>
+                  <p>
+                    Cô gái dịu dàng, mang nụ cười rạng rỡ đã làm sáng bừng cuộc
+                    đời chàng từ ngày đầu gặp gỡ.
+                  </p>
+                </div>
+              </div>
+              <img
+                src="assets/media/about/GD_01308.jpg"
+                alt=""
+                class="bride-img"
+              />
+            </div>
+          </div>
+        </section>
+        <!-- Giới thiệu Area End  -->
+
+        <!-- Coming Soon Area End  -->
+
+        <!-- Story Area Start  -->
+        <section id="story">
+          <div class="container-fluid">
+            <div class="heading-block">
+              <div class="content-block">
+                <h4>CÂU CHUYỆN CỦA CHÚNG MÌNH</h4>
+                <h3>Hành Trình Tình Yêu</h3>
+              </div>
+            </div>
+            <div class="story">
+              <div class="content">
+                <div class="block">
+                  <img
+                    src="assets/media/icons/heart.png"
+                    alt=""
+                    class="heart-icon"
+                  />
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div
+                        style="
+                          aspect-ratio: 4/3;
+                          overflow: hidden;
+                          border-radius: 4px;
+                        "
+                      >
+                        <img
+                          src="assets/media/story/s1.jpg"
+                          alt=""
+                          style="
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                          "
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="text-block">
+                        <h4>Bạn Thơ, Người Thương</h4>
+                        <p>
+                          Chúng mình biết nhau từ nhỏ. Lớn lên có cơ hội gặp gỡ
+                          hẹn hò và cùng nhau có những chuyến đi chơi thật vui
+                          vẻ và hạnh phúc.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block st-2">
+                  <img
+                    src="assets/media/icons/heart.png"
+                    alt=""
+                    class="heart-icon"
+                  />
+                  <div class="row">
+                    <div class="col-md-6 order-md-2">
+                      <div
+                        style="
+                          aspect-ratio: 4/3;
+                          overflow: hidden;
+                          border-radius: 4px;
+                        "
+                      >
+                        <img
+                          src="assets/media/story/s-2.jpg"
+                          alt=""
+                          style="
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center 60%;
+                          "
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                      <div class="text-block">
+                        <h6>14/11/2024</h6>
+                        <h4>Nàng Đã Gật Đầu!</h4>
+                        <p>
+                          Một chiếc view từ trên cao nhìn xuống biển thật đẹp,
+                          giây phút ấy thật tuyệt vời khi trên tay Thảo Vy đã
+                          đeo chiếc nhẫn cầu hôn.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block pb-0">
+                  <img
+                    src="assets/media/icons/heart.png"
+                    alt=""
+                    class="heart-icon"
+                  />
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div
+                        style="
+                          aspect-ratio: 4/3;
+                          overflow: hidden;
+                          border-radius: 4px;
+                        "
+                      >
+                        <img
+                          src="assets/media/story/CHD05400.jpg"
+                          alt=""
+                          style="
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                          "
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="text-block">
+                        <h6>07/03/2026</h6>
+                        <h4>Ngày Đám Hỏi</h4>
+                        <p>
+                          Trong không khí ấm cúng của ngày đám hỏi, hai gia đình
+                          chính thức kết thân, trao nhau những lời chúc phúc
+                          chân thành nhất. Đây là bước khởi đầu cho một hành
+                          trình mới — hành trình cùng nhau xây dựng tổ ấm và vun
+                          đắp tình yêu bền vững.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Story Area End  -->
+
+        <!-- Gallery Area Start  -->
+        <div class="gallery-grid" id="gallery">
+          <div class="container-fluid">
+            <!-- Hàng 1: 3 portrait -->
+            <div class="row">
+              <div class="col-md-4 col-item">
+                <div class="g-item g-portrait">
+                  <img
+                    src="assets/media/gallery/GD_00944.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 col-item">
+                <div class="g-item g-portrait">
+                  <img
+                    src="assets/media/gallery/GD_01003 ban.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 col-item">
+                <div class="g-item g-portrait">
+                  <img
+                    src="assets/media/gallery/GD_01119 ban.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Hàng 2: 2 landscape -->
+            <div class="row">
+              <div class="col-md-6 col-item">
+                <div class="g-item g-landscape">
+                  <img
+                    src="assets/media/gallery/GD_01731.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 col-item">
+                <div class="g-item g-landscape">
+                  <img
+                    src="assets/media/gallery/GD_01632.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Hàng 3: 4 portrait -->
+            <div class="row">
+              <div class="col-md-3 col-item">
+                <div class="g-item g-portrait">
+                  <img
+                    src="assets/media/gallery/GD_01308.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="col-md-3 col-item">
+                <div class="g-item g-portrait">
+                  <img
+                    src="assets/media/gallery/GD_01344 ban.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="col-md-3 col-item">
+                <div class="g-item g-portrait">
+                  <img
+                    src="assets/media/gallery/GD_01377 ban.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="col-md-3 col-item">
+                <div class="g-item g-portrait">
+                  <img
+                    src="assets/media/gallery/GD_01413.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Hàng 5: 3 portrait -->
+            <div class="row">
+              <div class="col-md-4 col-item">
+                <div class="g-item g-portrait">
+                  <img
+                    src="assets/media/gallery/GD_01498.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 col-item">
+                <div class="g-item g-portrait">
+                  <img
+                    src="assets/media/gallery/GD_01589.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 col-item">
+                <div class="g-item g-portrait">
+                  <img
+                    src="assets/media/gallery/GD_01542.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 col-item">
+                <div class="g-item g-portrait">
+                  <img
+                    src="assets/media/gallery/GD_02298.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 col-item">
+                <div class="g-item g-portrait">
+                  <img
+                    src="assets/media/gallery/GD_01926 ban.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 col-item">
+                <div class="g-item g-portrait">
+                  <img
+                    src="assets/media/gallery/GD_02276.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Hàng 6: 4 portrait -->
+            <div class="row">
+              <div class="col-md-3 col-item">
+                <div class="g-item g-portrait">
+                  <img
+                    src="assets/media/gallery/GD_02549.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="col-md-3 col-item">
+                <div class="g-item g-portrait">
+                  <img
+                    src="assets/media/gallery/GD_02532.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="col-md-3 col-item">
+                <div class="g-item g-portrait">
+                  <img
+                    src="assets/media/gallery/GD_02573.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="col-md-3 col-item">
+                <div class="g-item g-portrait">
+                  <img
+                    src="assets/media/gallery/GD_01800.jpg"
+                    alt="Thiên Ân & Thảo Vy"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Gallery Area End  -->
+
+        <!-- Lời Chúc Area Start  -->
+        <section id="rspv" class="reservation">
+          <div class="content-block">
+            <div class="wishes-ornament">✦</div>
+            <h3 class="mb-8">Gửi Lời Chúc</h3>
+            <p class="mb-32">
+              Hãy để lại một lời chúc cho Thiên Ân & Thảo Vy —<br />
+              mỗi lời chúc là một điều tốt đẹp chúng mình mang theo
+            </p>
+            <div class="text-center">
+              <button class="cus-btn dark" onclick="openWishesModal()">
+                Viết Lời Chúc
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- Lời Chúc Area End  -->
+
+        <!-- Wishes Modal -->
+        <div
+          id="wishes-modal"
+          style="
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(58, 40, 32, 0.55);
+            backdrop-filter: blur(4px);
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <div
+            style="
+              background: #fffaf6;
+              border-radius: 4px;
+              width: 90%;
+              max-width: 600px;
+              max-height: 90vh;
+              overflow: hidden;
+              position: relative;
+              box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+            "
+          >
+            <!-- Modal header -->
+            <div
+              style="
+                padding: 28px 32px 0;
+                text-align: center;
+                border-bottom: 1px solid rgba(200, 160, 112, 0.2);
+                padding-bottom: 20px;
+              "
+            >
+              <span style="font-size: 14px; color: #c8a070; letter-spacing: 6px"
+                >✦</span
+              >
+              <h4
+                style="
+                  font-family: &quot;Cormorant Garamond&quot;, serif !important;
+                  font-size: 28px;
+                  font-style: italic;
+                  font-weight: 400;
+                  color: #3a2820;
+                  margin: 8px 0 4px;
+                "
+              >
+                Gửi Lời Chúc
+              </h4>
+              <p style="font-size: 13px; color: #9a7060; letter-spacing: 0.5px">
+                Thiên Ân & Thảo Vy
+              </p>
+              <button
+                onclick="closeWishesModal()"
+                style="
+                  position: absolute;
+                  top: 16px;
+                  right: 20px;
+                  background: none;
+                  border: none;
+                  font-size: 22px;
+                  color: #b07d5a;
+                  cursor: pointer;
+                  line-height: 1;
+                "
+              >
+                &times;
+              </button>
+            </div>
+            <!-- Embedded Google Form -->
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSfhGpLODWLLh3xORwsaegIx8D8aGvdVy1fkoRduus7-Qy8SiQ/viewform?embedded=true"
+              width="100%"
+              height="480"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              style="display: block"
+              >Đang tải...</iframe
+            >
+          </div>
+        </div>
+
+        <!-- Events Area Start  -->
+        <section id="events">
+          <div class="heading-block mb-64">
+            <div class="content-block">
+              <h4>Sự kiện</h4>
+              <h3>Đính hôn & Đám cưới</h3>
+            </div>
+          </div>
+          <div class="events-slider">
+            <!-- Slide 1: Lễ Đám Hỏi -->
+            <div class="item slide-1">
+              <div class="container-fluid">
+                <div class="row justify-content-center">
+                  <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10">
+                    <div class="slide-content-block">
+                      <div class="event-card">
+                        <div class="event-card-inner">
+                          <span class="ornament">✦ ✦ ✦</span>
+                          <h4 class="event-title">Lễ Đám Hỏi</h4>
+                          <span class="event-subtitle"
+                            >Thiên Ân &amp; Thảo Vy</span
+                          >
+                          <div class="event-divider">
+                            <span></span>
+                            <i class="fas fa-heart"></i>
+                            <span></span>
+                          </div>
+                          <div class="event-info-row">
+                            <div class="icon">
+                              <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="info-text">
+                              <span class="info-label">Ngày</span>
+                              <span class="info-value"
+                                >Thứ Bảy, 07 tháng 03 năm 2026</span
+                              >
+                            </div>
+                          </div>
+                          <div class="event-info-row">
+                            <div class="icon"><i class="fas fa-clock"></i></div>
+                            <div class="info-text">
+                              <span class="info-label">Giờ</span>
+                              <span class="info-value"
+                                >08:00 Sáng — 12:00 Trưa</span
+                              >
+                            </div>
+                          </div>
+                          <div class="event-info-row">
+                            <div class="icon">
+                              <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-text">
+                              <span class="info-label">Địa điểm</span>
+                              <span class="info-value"
+                                >Tổ 5, Ấp Cây Trường,<br />Xã Trừ Văn Thố,
+                                TP.HCM</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="event-card-footer">
+                          <strong>Thiên Ân &amp; Thảo Vy</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2: Đám Cưới Nhà Gái -->
+            <div class="item slide-2">
+              <div class="container-fluid">
+                <div class="row justify-content-center">
+                  <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10">
+                    <div class="slide-content-block">
+                      <div class="event-card">
+                        <div class="event-card-inner">
+                          <span class="ornament">✦ ✦ ✦</span>
+                          <h4 class="event-title">Đám Cưới Nhà Gái</h4>
+                          <span class="event-subtitle"
+                            >Gia đình cô dâu Thảo Vy</span
+                          >
+                          <div class="event-divider">
+                            <span></span>
+                            <i class="fas fa-heart"></i>
+                            <span></span>
+                          </div>
+                          <div class="event-info-row">
+                            <div class="icon">
+                              <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="info-text">
+                              <span class="info-label">Ngày</span>
+                              <span class="info-value"
+                                >Thứ Bảy, 18 tháng 04 năm 2026</span
+                              >
+                            </div>
+                          </div>
+                          <div class="event-info-row">
+                            <div class="icon"><i class="fas fa-clock"></i></div>
+                            <div class="info-text">
+                              <span class="info-label">Giờ</span>
+                              <span class="info-value"
+                                >10:00 Sáng — 14:00 Chiều</span
+                              >
+                            </div>
+                          </div>
+                          <div class="event-info-row">
+                            <div class="icon">
+                              <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-text">
+                              <span class="info-label">Địa điểm</span>
+                              <span class="info-value"
+                                >Tổ 5, Ấp Cây Trường,<br />Xã Trừ Văn Thố,
+                                TP.HCM</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="event-card-footer">
+                          <strong>Thiên Ân &amp; Thảo Vy</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Đám Cưới Nhà Trai -->
+            <div class="item slide-3">
+              <div class="container-fluid">
+                <div class="row justify-content-center">
+                  <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10">
+                    <div class="slide-content-block">
+                      <div class="event-card">
+                        <div class="event-card-inner">
+                          <span class="ornament">✦ ✦ ✦</span>
+                          <h4 class="event-title">Đám Cưới Nhà Trai</h4>
+                          <span class="event-subtitle"
+                            >Gia đình chú rể Thiên Ân</span
+                          >
+                          <div class="event-divider">
+                            <span></span>
+                            <i class="fas fa-heart"></i>
+                            <span></span>
+                          </div>
+                          <div class="event-info-row">
+                            <div class="icon">
+                              <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="info-text">
+                              <span class="info-label">Ngày</span>
+                              <span class="info-value"
+                                >Thứ Bảy, 25 tháng 04 năm 2026</span
+                              >
+                            </div>
+                          </div>
+                          <div class="event-info-row">
+                            <div class="icon"><i class="fas fa-clock"></i></div>
+                            <div class="info-text">
+                              <span class="info-label">Giờ</span>
+                              <span class="info-value"
+                                >10:00 Sáng — 14:00 Chiều</span
+                              >
+                            </div>
+                          </div>
+                          <div class="event-info-row">
+                            <div class="icon">
+                              <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-text">
+                              <span class="info-label">Địa điểm</span>
+                              <span class="info-value"
+                                >Tổ 3, Khu Phố Xóm Bưng,<br />Phường Tây Nam,
+                                TP.HCM</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="event-card-footer">
+                          <strong>Thiên Ân &amp; Thảo Vy</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Events Area End  -->
+      </div>
+      <!-- Main Content End -->
+
+      <!-- footer Area start -->
+      <section class="footer">
+        <div class="container-fluid">
+          <h2
+            style="
+              font-family: &quot;Old Standard TT&quot;, serif;
+              font-weight: 400;
+              font-style: italic;
+              color: #b07d5a;
+              letter-spacing: 4px;
+            "
+          >
+            Thank You
+          </h2>
+        </div>
+      </section>
+      <!-- footer Area end -->
+    </div>
+    <!-- Jquery Js -->
+    <script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/jquery.countdown.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/smoothscroll.html"></script>
+    <script src="assets/js/vendor/jquery-appear.js"></script>
+
+    <!-- Site Scripts -->
+    <script src="assets/js/app.js"></script>
+    <script>
+      function openWishesModal() {
+        var modal = document.getElementById("wishes-modal");
+        modal.style.display = "flex";
+        document.body.style.overflow = "hidden";
+      }
+      function closeWishesModal() {
+        var modal = document.getElementById("wishes-modal");
+        modal.style.display = "none";
+        document.body.style.overflow = "";
+      }
+      // Close modal when clicking backdrop
+      document
+        .getElementById("wishes-modal")
+        .addEventListener("click", function (e) {
+          if (e.target === this) closeWishesModal();
+        });
+    </script>
+  </body>
+
+  <!-- Mirrored from uiparadox.co.uk/templates/blessed/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 15:33:41 GMT -->
+</html>
